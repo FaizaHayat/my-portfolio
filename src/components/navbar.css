@@ -1,0 +1,67 @@
+/* Navigation bar styling */
+.navbar {
+  width: 100%;
+  padding-top: 35px;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 5px;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Default styles for .nav-item a img */
+.nav-item a img {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  transition: filter 0.3s; /* Add a transition for smooth hover effect */
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  transition: 0.5s ease;
+}
+
+button::before {
+  margin-left: auto;
+}
+
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #0003ab;
+  display: block;
+  transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item button {
+    font-size: 9px;
+    padding: 1px;
+  }
+}
